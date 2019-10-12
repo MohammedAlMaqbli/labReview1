@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: #777;
+}
+section{
+    margin: 5% 0 ;
+    width: 100%;
+}
+.header-p{
+    text-align: center;
+}
+.header{
+    text-align: center;
+    font-size:25px;
+}
+.img{
+    height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") ;
+    
+}
+.text{
+    margin: 20% 0;
+}
+.row::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+.f-r{
+    float: right;
+}
+.f-l{
+    float: left;
+}
+.col-4 {
+    width :45%;
+    margin-left: 2%;
+}
+[class*="col-"]{
+    margin: 20px 0 ;
+}
+.m-l{
+    margin-left:2% ;
+}
+.m-r{
+    margin-right: 2%;
+}
+.t-c{
+    text-align: center;
+}
+.bg-b{
+    padding: 25px;
+    background: paleturquoise;
+}
+.col-12{
+    width: 100%;
+}
+form label{
+    display: block;
+}
+form input{
+    width: 50%;
+    display: block;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+}
+@media screen and (max-width:768px){
+    .col-m-12{
+        width: 100%;
+        margin: 15px 0 ;
+    }
+    .f-r{
+        float: none;
+    }
+    .f-l{
+        float: none;
+    }
+    .text{
+        margin: 10% 0;
+    }
+    .m-l{
+        margin-left:0 ;
+    }
+
+}
